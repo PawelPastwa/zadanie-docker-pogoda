@@ -8,7 +8,7 @@ COPY main.go .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 
-FROM alpine:3.19
+FROM alpine:3.24
 
 LABEL org.opencontainers.image.authors="Pawel Pastwa"
 LABEL org.opencontainers.image.title="Zadanie 1 - Aplikacja Pogodowa"
